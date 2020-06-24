@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="VodafoneBS_Branding"
+      id="265a1dd5-0202-492b-913e-b626fba6cfc0"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="VodafoneBS_Branding"
+      id="265a1dd5-0202-492b-913e-b626fba6cfc0"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F79DCD9E-1345-4966-B2E9-FFB8BEAA75D9}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>VodafoneBS_Branding</RootNamespace>
+    <AssemblyName>VodafoneBS_Branding</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>a3087f1a-c5f2-4b97-9707-b733753f92b6</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>e99bb524-fee1-44a7-8f5a-a93209ae5a39</id>
+    </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>8f1a9c1c-99df-4cb2-b59c-3d93cb6a15e8</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>416a31f5-1eac-4dd5-a6bf-3820c7318689</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>8f1a9c1c-99df-4cb2-b59c-3d93cb6a15e8</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55f9e10c-7f7d-4daa-9e04-c7b67bc7e76c</id>
+    </Compile>
+    <Compile Include="Login_Recording.cs">
+      <BoundTo>752591f5-c58c-416e-8372-7a5b6d0dd920</BoundTo>
+      <DependentUpon>Login_Recording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>27ec7901-02d0-45be-a48e-d9ca8f36fe49</id>
+    </Compile>
+    <Compile Include="Login_Recording.UserCode.cs">
+      <BoundTo>752591f5-c58c-416e-8372-7a5b6d0dd920</BoundTo>
+      <DependentUpon>Login_Recording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>663f50f0-bbb4-464e-85ed-e8ea8e8f3da6</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>901fdb1e-97f3-4593-a054-fe791341940b</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4aac5aa9-eaf0-412b-b6a5-56bc9b2a5420</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>901fdb1e-97f3-4593-a054-fe791341940b</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9cba7470-89fb-48ff-a16a-b901ef558346</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>21bd223a-2337-4d43-b5ff-fe5491b405ff</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>6169520e-816f-4038-a983-5cfb25bcceb6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef7db724-3258-4d10-9155-714f9ede5a8d</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>6169520e-816f-4038-a983-5cfb25bcceb6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3be06e15-dc04-4bac-b7db-a862161d668c</id>
+    </Compile>
+    <Compile Include="VodafoneBS_BrandingRepository.cs">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <DependentUpon>VodafoneBS_BrandingRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>89db05f9-350b-4dfb-a35d-5708fb059cd0</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>81cc6932-6090-4d47-aa78-ba76ffd1d40b</id>
+    </None>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <id>8f1a9c1c-99df-4cb2-b59c-3d93cb6a15e8</id>
+      <recordtableid>42a10aa7-620f-4359-9ae4-dcbfbd5b2c3a</recordtableid>
+    </None>
+    <None Include="Login_Recording.rxrec">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <id>752591f5-c58c-416e-8372-7a5b6d0dd920</id>
+      <recordtableid>d9aa3286-eab1-442d-9474-69e4fff03219</recordtableid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <id>901fdb1e-97f3-4593-a054-fe791341940b</id>
+      <recordtableid>72617df9-3359-4c2a-8243-4cc5cb794806</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>830cd63e-0a9a-4633-a4ba-fd3cd4872c4a</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <id>6169520e-816f-4038-a983-5cfb25bcceb6</id>
+      <recordtableid>495dd5d2-efc5-4ab5-9682-d6254eec256c</recordtableid>
+    </None>
+    <None Include="VodafoneBS_BrandingRepository.rximg">
+      <BoundTo>a3087f1a-c5f2-4b97-9707-b733753f92b6</BoundTo>
+      <DependentUpon>VodafoneBS_BrandingRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d87eb815-d2bc-4596-9910-04b0733d93e1</id>
+    </None>
+    <None Include="VodafoneBS_BrandingRepository.rxrep">
+      <id>a3087f1a-c5f2-4b97-9707-b733753f92b6</id>
+      <repoid>d8a6487d-bc1e-4777-9c49-d1733c1eae72</repoid>
+      <reporootid>b5eaa830-4a32-43f0-b9c0-bb8e0443eb0a</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VodafoneBS_Branding.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>efd744c5-edac-405b-9ef5-6cb3313d07ca</id>
+    </Content>
+    <Content Include="VodafoneBS_Branding.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d683666d-be6a-4552-b037-bd4c58ef1473</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

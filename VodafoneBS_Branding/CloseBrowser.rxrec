@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="42a10aa7-620f-4359-9ae4-dcbfbd5b2c3a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="VodafoneBS_Branding">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="0ab5d4d7-3131-4474-9302-505c9ac3d7d3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="45e75d1d-fb75-48b9-948c-f0308a8f07ad"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='MicrosoftEdge']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d8a6487d-bc1e-4777-9c49-d1733c1eae72"
+	name="VodafoneBS_BrandingRepository"
+	relativepath="VodafoneBS_BrandingRepository.rxrep">
+		<codegen
+		classname="VodafoneBS_BrandingRepository"
+		namespace="VodafoneBS_Branding">
+		</codegen>
+		<rootfolder
+		id="b5eaa830-4a32-43f0-b9c0-bb8e0443eb0a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

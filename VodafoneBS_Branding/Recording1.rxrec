@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="495dd5d2-efc5-4ab5-9682-d6254eec256c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="VodafoneBS_Branding">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="d8a6487d-bc1e-4777-9c49-d1733c1eae72"
+	name="VodafoneBS_BrandingRepository"
+	relativepath="VodafoneBS_BrandingRepository.rxrep">
+		<codegen
+		classname="VodafoneBS_BrandingRepository"
+		namespace="VodafoneBS_Branding">
+		</codegen>
+		<rootfolder
+		id="b5eaa830-4a32-43f0-b9c0-bb8e0443eb0a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

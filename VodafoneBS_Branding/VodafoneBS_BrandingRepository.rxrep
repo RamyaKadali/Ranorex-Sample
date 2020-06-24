@@ -1,0 +1,150 @@
+﻿<repository
+id="d8a6487d-bc1e-4777-9c49-d1733c1eae72"
+name="VodafoneBS_BrandingRepository">
+	<codegen
+	classname="VodafoneBS_BrandingRepository"
+	namespace="VodafoneBS_Branding">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="b5eaa830-4a32-43f0-b9c0-bb8e0443eb0a"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="45e75d1d-fb75-48b9-948c-f0308a8f07ad"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ee73ac8f-748f-4b52-8069-3e62462ccab4"
+			name="Username"
+			refimgid="8edbd844-5e9c-441c-8a52-c9a6f37ec469"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'username']"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'username']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8f5f7c46-4673-4111-b020-4e85e7db5ca2"
+			name="Password"
+			refimgid="b7f289d0-dcbc-4e72-b943-8e4262c384a5"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'password']"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e21a1843-d8bc-43ad-b6de-cd1a670bde60"
+			name="Submit"
+			refimgid="67ddf981-a4b6-4830-8b7f-0203774176bc"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//input[#'submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="afc79f51-7139-423f-9a25-a85b664797ea"
+			name="Users"
+			refimgid="9a2bc7d4-42a2-4988-85e7-daa6aae0fb35"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//section[#'float']/div/div/div/section/div/div[3]/div[3]"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//section[#'float']/div/div/div/section/div/div[3]/div[3]
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="ac280bd3-7fc4-448a-abe7-e6234d36f315"
+			name="GoToServerHome"
+			refimgid="81605671-95b7-4307-86c5-b53cfceab9dc"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//body[#'top']/header/div/a[@title='Go to server home']/img[@alt='Go to server home']"
+			searchtimeout="30000ms">
+				<image
+				guid="f492d271-c64d-4b13-9c82-843249d377cd"
+				name="Screenshot1">
+					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
+				</image>
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//body[#'top']//a[@title='Go to server home']/img[@alt='Go to server home']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="741a917b-7294-4c61-8e04-ae253083c7d6"
+			name="Account"
+			refimgid="a87dd8d4-06c5-4f0a-8c85-f0abd89edb00"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//div[#'userPanel']/span[3]"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//div[#'userPanel']/span[3]
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="25460181-175f-456d-b7d2-1d47f6682d87"
+			name="Logout"
+			refimgid="61de087d-0d17-40a5-90f0-cfc8e3aa5cbd"
+			refpath="/dom[@domain='vodar2737.caas.edgevis.io:9443']//div[#'userPanel']/ul/li[3]/a[@innertext='Logout']"
+			searchtimeout="30000ms">
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']//div[#'userPanel']//a[@innertext='Logout']
+			</item>
+			<basepath>
+				/dom[@domain='vodar2737.caas.edgevis.io:9443']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
